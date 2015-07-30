@@ -1,20 +1,25 @@
 header {
     .title {
-        padding: 6%;
-
-
+        padding: 6% 6% 0 6%;
         text-align: center;
         height: auto;
         margin: 0;
-        letter-spacing: .15em;
+        letter-spacing: .12em;
         text-transform: capitalize;
+    }
+
+    .comment {
+        color: lighten($accent-color, 10%);
+        margin-top: .5em;
+        text-align: center;
+        letter-spacing: .25em;
     }
 }
 
-@media (min-width: 700px){
+@media (max-width: 700px){
     header {
         .title {
-            padding: 7%;
+            padding: 7% 7% 0 7%;
         }
     }
 }

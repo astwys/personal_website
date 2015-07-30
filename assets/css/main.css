@@ -431,6 +431,7 @@ body {
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
   background: #F6F6F8;
   font-size: 1em;
   line-height: 1.6;
@@ -449,16 +450,22 @@ body {
     font-size: 1.5em; } }
 
 header .title {
-  padding: 6%;
+  padding: 6% 6% 0 6%;
   text-align: center;
   height: auto;
   margin: 0;
-  letter-spacing: .15em;
+  letter-spacing: .12em;
   text-transform: capitalize; }
 
-@media (min-width: 700px) {
+header .comment {
+  color: #cb756d;
+  margin-top: .5em;
+  text-align: center;
+  letter-spacing: .25em; }
+
+@media (max-width: 700px) {
   header .title {
-    padding: 7%; } }
+    padding: 7% 7% 0 7%; } }
 
 section .post {
   width: 33.3333%;
@@ -471,8 +478,8 @@ section .post {
   section .post:hover {
     background-color: #e6e6e6; }
   section .post .image {
-    width: 320px;
-    height: 150px;
+    width: 70%;
+    height: 200px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -495,13 +502,13 @@ section .post {
   section .post {
     width: 50%; }
     section .post .image {
-      width: 270px; } }
+      width: 70%; } }
 
 @media (max-width: 700px) {
   section .post {
     width: 100%; }
     section .post .image {
-      width: 350px; }
+      width: 70%; }
     section .post hr {
       display: block; }
     section .post:first-child {
@@ -511,9 +518,13 @@ section .post {
   section .post {
     width: 25%; } }
 
-footer .info {
-  font-size: .9em;
-  padding: 0 5%; }
+footer {
+  clear: both; }
+  footer .info {
+    font-size: .9em;
+    padding: 0 6%;
+    bottom: 0;
+    left: 0; }
 
 @media (max-width: 1000px) {
   footer .info {
