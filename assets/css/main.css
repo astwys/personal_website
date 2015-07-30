@@ -408,13 +408,13 @@ a:hover, a:focus {
   color: #d89993; }
 
 ::-moz-selection {
-  background: #C3F590; }
+  background: #FFF498; }
 
 ::selection {
-  background: #C3F590; }
+  background: #FFF498; }
 
 ::-moz-selection {
-  background: #C3F590; }
+  background: #FFF498; }
 
 img::-moz-selection {
   background: transparent; }
@@ -426,13 +426,99 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: #C3F590; }
+  -webkit-tap-highlight-color: #FFF498; }
 
 body {
+  margin: 0;
+  padding: 0;
   background: #F6F6F8;
-  font-size: 14px;
+  font-size: 1em;
   line-height: 1.6;
   font-family: 'Open Sans' sans-serif;
   color: #2E2D33;
   -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+  letter-spacing: .1em; }
+
+@media (max-width: 1000px) {
+  body {
+    font-size: 1.25em; } }
+
+@media (min-width: 1500px) {
+  body {
+    font-size: 1.5em; } }
+
+header .title {
+  padding: 6%;
+  text-align: center;
+  height: auto;
+  margin: 0;
+  letter-spacing: .15em;
+  text-transform: capitalize; }
+
+@media (min-width: 700px) {
+  header .title {
+    padding: 7%; } }
+
+section .post {
+  width: 33.3333%;
+  float: left;
+  margin-bottom: 2em;
+  padding: 1em 0;
+  -webkit-transition: .3s ease-in-out;
+          transition: .3s ease-in-out;
+  border-radius: 8px; }
+  section .post:hover {
+    background-color: #e6e6e6; }
+  section .post .image {
+    width: 320px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 4px; }
+  section .post .title {
+    text-align: center; }
+  section .post .preview {
+    padding: 0 3em; }
+  section .post .read {
+    text-align: center;
+    display: block; }
+    section .post .read:hover {
+      color: #75312a; }
+  section .post hr {
+    display: none;
+    margin-top: 1.5em;
+    margin-bottom: 0; }
+
+@media (max-width: 1000px) {
+  section .post {
+    width: 50%; }
+    section .post .image {
+      width: 270px; } }
+
+@media (max-width: 700px) {
+  section .post {
+    width: 100%; }
+    section .post .image {
+      width: 350px; }
+    section .post hr {
+      display: block; }
+    section .post:first-child {
+      margin-top: 2em; } }
+
+@media (min-width: 1500px) {
+  section .post {
+    width: 25%; } }
+
+footer .info {
+  font-size: .9em;
+  padding: 0 5%; }
+
+@media (max-width: 1000px) {
+  footer .info {
+    font-size: .8em; } }
+
+@media (max-width: 700px) {
+  footer .info {
+    font-size: .75em; } }
